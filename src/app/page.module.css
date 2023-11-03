@@ -1,0 +1,26 @@
+.blog__box{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 130px;
+}
+
+.blog__content{
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 50%;
+	border: 1px solid black;
+}
+
+.blog__wrapper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-block-end: 60px;
+}
+
+.blog__sidebar{
+	flex-basis: 270px;
+	flex-grow: 1;
+	border: 1px solid black;
+}

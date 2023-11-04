@@ -5,8 +5,12 @@
     opacity: 0.7;
     background-image:  linear-gradient(#2a2a2b 0.5px, transparent 0.5px), linear-gradient(to right, #2a2a2b 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
-    padding: 100px;
+    /* padding: 100px; */
+    width: 400px;
+    height: 400px;
     position: relative;
+    display: grid;
+    place-items: center;
 }
 .rotate__box{
     transform: rotate(var(--rotate));
@@ -52,4 +56,79 @@
     display: block;
     font-size: 20px;
     margin-inline-start: auto;
+}
+
+
+.graph{
+    top: -50px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    border-top: 3px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .graph__col{
+    top: 0;
+    left: -50px;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    border-left: 3px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reng__col{
+    display: grid;
+    place-items: center;
+  }
+  .reng{
+    display: grid;
+    place-items: center;
+}
+
+.reng__col span{
+    display: grid;
+    place-items: center;
+    margin-inline-start: 10px;
+    color: #d62828;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    position: relative;
+}
+
+.reng span{
+    margin-block-start: 10px;
+    display: grid;
+    place-items: center;
+    color: #d62828;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    position: relative;
+}
+
+.reng__col span::before{
+  content: "";
+  display: block;
+  width:11px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 12px;
+  left: -13px;
+}
+
+.reng span::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -15px;
 }

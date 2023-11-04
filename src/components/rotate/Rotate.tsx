@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import Cube from "../cube/Cube";
 import { InputFrame } from "../inputFrame/InputFrame";
+import Graph from "../graph/Graph";
 
 export default function Rotate() {
   const [rotate, setRotate] = useState(90);
@@ -11,6 +12,20 @@ export default function Rotate() {
     <div>
       <h2>Rotate</h2>
       <div className={styles.wrapper__box}>
+        <Graph
+          from={1}
+          to={10}
+          step={1}
+          classGraph={styles.graph}
+          classReng={styles.reng}
+        />
+        <Graph
+          from={1}
+          to={10}
+          step={1}
+          classGraph={styles.graph__col}
+          classReng={styles.reng__col}
+        />
         <div className={styles.x__axis}>
           <span>x</span>
         </div>

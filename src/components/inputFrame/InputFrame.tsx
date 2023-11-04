@@ -49,7 +49,7 @@ export function InputFrame({
           <VisuallyHidden>{numberLabel}</VisuallyHidden>
         </label>
         <input
-          className={clsx(style.input, style.input__number)}
+          className={clsx(style.input__number)}
           type="number"
           id={numberValumeId}
           value={value}

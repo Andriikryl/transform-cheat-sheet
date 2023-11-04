@@ -38,7 +38,7 @@ body {
   position: relative;
 }
 
-body::after{
+/* body::after{
   content: "";
   display: block;
   position: absolute;
@@ -53,7 +53,7 @@ body::after{
     hsla(0, 0%, 0%, 1)
 );
   mix-blend-mode: overlay;
-}
+} */
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4, h5

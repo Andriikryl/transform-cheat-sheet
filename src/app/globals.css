@@ -7,7 +7,7 @@
 }
 
 main{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* Prevent font size inflation */
@@ -36,6 +36,7 @@ body {
   line-height: 1.5;
   background: hsl(40, 35%, 76%); 
   position: relative;
+  overflow-x: hidden;
 }
 
 /* body::after{

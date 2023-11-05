@@ -1,0 +1,20 @@
+.rotate{
+    margin-block-start: 50px;
+    border: 1px solid black;
+}
+
+.flex__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 20px;
+}
+.rotate__box{
+    transform: translate(var(--translateX), var(--translateY)) ;
+}
+
+.bg__colorSied{
+    background-color: hsl(344, 100%, 95%, .3);
+    border: 2px solid #d62828;
+}

@@ -11,7 +11,7 @@
     margin-block-end: 20px;
 }
 .rotate__box{
-    transform: scale(var(--scaleX), var(--scaleY)) ;
+    transform: skew(var(--skewX), var(--skewY)) ;
 }
 
 .bg__colorSied{

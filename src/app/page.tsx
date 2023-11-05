@@ -6,6 +6,7 @@ import Rotate from "@/components/rotate/Rotate";
 import { useState } from "react";
 import RotateAxies from "@/components/rotateAxies/RotateAxies";
 import Scale from "@/components/scale/Scale";
+import Skew from "@/components/skew/Skew";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
               <Rotate />
               <RotateAxies />
               <Scale />
+              <Skew />
             </div>
           </div>
         </div>

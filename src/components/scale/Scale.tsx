@@ -8,7 +8,8 @@ import { Heading } from "../heading/Heading";
 import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
 
 export default function Scale() {
-  const [scale, setScale] = useState(1);
+  const [scaleX, setScaleX] = useState(1);
+  const [scaleY, setScaleY] = useState(1);
 
   return (
     <div className={styles.rotate}>
@@ -25,7 +26,8 @@ export default function Scale() {
             className={styles.rotate__box}
             style={
               {
-                "--scale": `${scale}`,
+                "--scaleX": `${scaleX}`,
+                "--scaleY": `${scaleY}`,
               } as React.CSSProperties
             }
           >
@@ -40,13 +42,23 @@ export default function Scale() {
         </FieldBox>
         <InputFrame
           className={styles.form__angel}
-          value={scale}
-          set={setScale}
+          value={scaleX}
+          set={setScaleX}
           min={0}
           max={3}
           step={0.1}
-          rangeLabel="rotate"
-          numberLabel="rotate number"
+          rangeLabel="scale SX"
+          numberLabel="scale SX number"
+        ></InputFrame>
+        <InputFrame
+          className={styles.form__angel}
+          value={scaleY}
+          set={setScaleY}
+          min={0}
+          max={3}
+          step={0.1}
+          rangeLabel="scale SY"
+          numberLabel="scale SY number"
         ></InputFrame>
       </div>
     </div>

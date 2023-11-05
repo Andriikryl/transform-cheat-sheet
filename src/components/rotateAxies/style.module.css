@@ -25,7 +25,9 @@
     gap: 10px;
 }
 .rotate__box{
-    transform: rotate(var(--rotate));
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
+    transform-origin: center center;
+    perspective:700px;
 }
 
 .bg__colorSied{

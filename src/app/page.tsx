@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import clsx from "clsx";
 import Rotate from "@/components/rotate/Rotate";
 import { useState } from "react";
+import RotateAxies from "@/components/rotateAxies/RotateAxies";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <div className={styles.blog__content}>
             <div className={styles.blog__wrapper}>
               <Rotate />
+              <RotateAxies />
             </div>
           </div>
         </div>

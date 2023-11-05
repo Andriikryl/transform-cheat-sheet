@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import Cube from "../cube/Cube";
 import { InputFrame } from "../inputFrame/InputFrame";
-import Graph from "../graph/Graph";
 import { random } from "../utils/random";
 import FieldBox from "../fieldBox/FieldBox";
 
@@ -15,8 +14,12 @@ export default function Rotate() {
   };
 
   return (
-    <div>
-      <h2>Rotate</h2>
+    <div className={styles.rotate}>
+      <h2 className={styles.rotate__title}>Rotate</h2>
+      <p className={styles.description__block}>
+        The rotate property accepts an angle to rotate an element, and
+        optionally an axis to rotate it around.
+      </p>
       <div className={styles.flex__group}>
         <FieldBox>
           <div

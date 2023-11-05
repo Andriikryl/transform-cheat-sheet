@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Rotate from "@/components/rotate/Rotate";
 import { useState } from "react";
 import RotateAxies from "@/components/rotateAxies/RotateAxies";
+import Scale from "@/components/scale/Scale";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
             <div className={styles.blog__wrapper}>
               <Rotate />
               <RotateAxies />
+              <Scale />
             </div>
           </div>
         </div>

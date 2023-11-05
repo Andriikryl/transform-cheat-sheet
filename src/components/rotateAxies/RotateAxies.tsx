@@ -33,6 +33,11 @@ export default function RotateAxies() {
         rotate3d() function.
       </p>
       <div className={styles.flex__group}>
+        <div className={styles.axies}>
+          <div className={styles.axies__side}></div>
+          <div className={styles.axies__side}></div>
+          <div className={styles.axies__side}></div>
+        </div>
         <FieldBox>
           <div
             className={styles.rotate__box}

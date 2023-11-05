@@ -10,6 +10,8 @@ import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
 export default function Translate() {
   const [translateX, setTranslateX] = useState(0);
   const [translateY, setTranslateY] = useState(0);
+  const [translateXpx, setTranslateXpx] = useState(0);
+  const [translateYpx, setTranslateYpx] = useState(0);
 
   return (
     <div className={styles.rotate}>
@@ -22,7 +24,7 @@ export default function Translate() {
       <div className={styles.flex__group}>
         <FieldBox>
           <div
-            className={styles.rotate__box}
+            className={styles.rotate__cube}
             style={
               {
                 "--translateX": `${translateX}px`,
@@ -58,6 +60,45 @@ export default function Translate() {
           step={1}
           rangeLabel="Translate SY"
           numberLabel="Translate SY number"
+        ></InputFrame>
+      </div>
+      <div className={styles.flex__group}>
+        <div className={styles.cube__box}>
+          <div className={styles.border__box}></div>
+          <div
+            className={styles.rotate__box}
+            style={
+              {
+                "--translateXpx": `${translateXpx}px`,
+                "--translateYpx": `${translateYpx}px`,
+              } as React.CSSProperties
+            }
+          >
+            <div>
+              <span>{translateXpx} px</span>
+              <span>{translateYpx} px</span>
+            </div>
+          </div>
+        </div>
+        <InputFrame
+          className={styles.form__angel}
+          value={translateXpx}
+          set={setTranslateXpx}
+          min={-100}
+          max={100}
+          step={1}
+          rangeLabel="Translate SXpx"
+          numberLabel="Translate SXpx number"
+        ></InputFrame>
+        <InputFrame
+          className={styles.form__angel}
+          value={translateYpx}
+          set={setTranslateYpx}
+          min={-100}
+          max={100}
+          step={1}
+          rangeLabel="Translate SYpx"
+          numberLabel="Translate SYpx number"
         ></InputFrame>
       </div>
     </div>

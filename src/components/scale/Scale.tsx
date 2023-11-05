@@ -5,6 +5,7 @@ import Cube from "../cube/Cube";
 import { InputFrame } from "../inputFrame/InputFrame";
 import FieldBox from "../fieldBox/FieldBox";
 import { Heading } from "../heading/Heading";
+import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
 
 export default function Scale() {
   const [scale, setScale] = useState(1);
@@ -12,12 +13,12 @@ export default function Scale() {
   return (
     <div className={styles.rotate}>
       <Heading headingLevel="h3">Scale</Heading>
-      <p className={styles.description__block}>
+      <DescriptionBlock>
         The scale() CSS function defines a transformation that resizes an
         element on the 2D plane. Because the amount of scaling is defined by a
         vector [sx, sy], it can resize the horizontal and vertical dimensions at
         different scales.
-      </p>
+      </DescriptionBlock>
       <div className={styles.flex__group}>
         <FieldBox>
           <div

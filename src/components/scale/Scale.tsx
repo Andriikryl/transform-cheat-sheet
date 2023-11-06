@@ -6,6 +6,7 @@ import { InputFrame } from "../inputFrame/InputFrame";
 import FieldBox from "../fieldBox/FieldBox";
 import { Heading } from "../heading/Heading";
 import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
+import ScaleOneValue from "./ScaleOneValue/ScaleOneValue";
 
 export default function Scale() {
   const [scaleX, setScaleX] = useState(1);
@@ -61,6 +62,7 @@ export default function Scale() {
           numberLabel="scale SY number"
         ></InputFrame>
       </div>
+      <ScaleOneValue />
     </div>
   );
 }

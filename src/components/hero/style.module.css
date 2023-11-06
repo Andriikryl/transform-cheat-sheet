@@ -1,0 +1,134 @@
+.home{
+    margin-block-start: 50px;
+    height: 100dvh;
+    border: 1px solid black;
+    position: relative;
+}
+.universal__group{
+    margin-block: 100px;
+    padding-inline: clamp(20px, 5vw + 1rem, 100px);
+      padding-block: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: auto;
+      border-radius: 10px;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .flex__group{ 
+        border-radius: 15px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        perspective: 6800px;
+  }
+
+  .cuboid__animation{
+    perspective: 9999px;
+    display: grid;
+    place-items: center;
+     animation: spin2 30s infinite linear;
+}
+.bg__colorSied{
+    background-color: hsl(345, 100%, 85%, .3);
+    border: 1px solid white;
+}
+.bg__colorMain{
+    background-color: hsl(199, 64%, 73%, .6);
+    border: 1px solid white;
+}
+.bg__colorTwo{
+    background-color: hsl(37, 98%, 53%, .6);
+    border: 1px solid white;
+}
+.bg__colorThree{
+    background-color: #d62828;
+    border: 1px solid white;
+}
+.cuboid__animationLIt{
+animation: spin2 10s infinite linear;
+}
+@keyframes spin2 {
+  0% {
+    transform: perspective(2600px) rotateX(0deg) rotateY(270deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(2600px) rotateX(360deg) rotateY(630deg) rotateZ(0deg);
+  }
+}
+
+
+.about__box{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding: 20px;
+    border-top: none;
+    background-color: hsl(355, 78%, 56%, .3);
+    backdrop-filter: blur(5px);
+}
+
+.about__title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+
+.about__description{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-block-end: 10px;
+}
+
+.stack__box{
+    border: 1px solid white;
+    padding: 20px;
+    margin-block-end: 20px;
+}
+
+.stack__title{
+    color: white;
+    font-size: 20px;
+    border-bottom: 3px solid #ff4617;
+    width: max-content;
+}
+
+.stack__list{
+    border-left: 3px solid #ff4617;
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 10px;
+    padding-inline-start: 10px;
+    gap: 20px;
+}
+
+.stack__item{
+    color: white;
+    font-size: 18px;
+    list-style: none;
+}
+
+.git__text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+.links__group{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

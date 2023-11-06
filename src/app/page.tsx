@@ -10,10 +10,16 @@ import Translate from "@/components/translate/Translate";
 import Origin from "@/components/origin/Origin";
 import { useTabs } from "@/components/hooks/useTabs";
 import { Framer } from "@/components/framer/Framer";
+import Hero from "@/components/hero/Hero";
 
 export default function Home() {
   const [hookProps] = useState({
     tabs: [
+      {
+        label: "Home",
+        children: <Hero />,
+        id: "Hero",
+      },
       {
         label: "Rotate",
         children: <Rotate />,
@@ -45,7 +51,7 @@ export default function Home() {
         id: "Transform origin",
       },
     ],
-    initialTabId: "Rotate",
+    initialTabId: "Hero",
   });
   const framer = useTabs(hookProps);
   return (

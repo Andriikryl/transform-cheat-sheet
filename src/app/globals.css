@@ -8,6 +8,8 @@
 
 main{
   overflow: hidden;
+  position: relative;
+  z-index: 20;
 }
 
 /* Prevent font size inflation */
@@ -34,12 +36,12 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background: hsl(40, 35%, 76%); 
+  background: hsl(37, 31%, 57%);
   position: relative;
   overflow-x: hidden;
 }
 
-/* body::after{
+body::after{
   content: "";
   display: block;
   position: absolute;
@@ -54,7 +56,8 @@ body {
     hsla(0, 0%, 0%, 1)
 );
   mix-blend-mode: overlay;
-} */
+  z-index: -1;
+}
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4, h5

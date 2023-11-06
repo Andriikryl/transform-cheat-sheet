@@ -6,6 +6,7 @@ import { InputFrame } from "../inputFrame/InputFrame";
 import FieldBox from "../fieldBox/FieldBox";
 import { Heading } from "../heading/Heading";
 import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
+import TranslateCalc from "./translateCalc/TranslateCalc";
 
 export default function Translate() {
   const [translateX, setTranslateX] = useState(0);
@@ -101,6 +102,7 @@ export default function Translate() {
           numberLabel="Translate SYpx number"
         ></InputFrame>
       </div>
+      <TranslateCalc />
     </div>
   );
 }

@@ -47,6 +47,7 @@
 }
 
 .axies{
+    margin-block-start: 40px;
     --width: 150px;
     --height:150px;
     --depth:150px;

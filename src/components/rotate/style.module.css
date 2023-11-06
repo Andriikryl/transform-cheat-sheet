@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-block-end: 20px;
 }
 .rotate__box{
     transform: rotate(var(--rotate));

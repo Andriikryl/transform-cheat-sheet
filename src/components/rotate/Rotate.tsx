@@ -5,6 +5,7 @@ import Cube from "../cube/Cube";
 import { InputFrame } from "../inputFrame/InputFrame";
 import { random } from "../utils/random";
 import FieldBox from "../fieldBox/FieldBox";
+import RotateTurn from "./rotateTurn/RotateTurn";
 
 export default function Rotate() {
   const [rotate, setRotate] = useState(90);
@@ -53,6 +54,7 @@ export default function Rotate() {
           random
         </button>
       </div>
+      <RotateTurn />
     </div>
   );
 }

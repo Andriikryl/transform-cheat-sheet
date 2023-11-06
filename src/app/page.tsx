@@ -39,6 +39,11 @@ export default function Home() {
         children: <Translate />,
         id: "Translate",
       },
+      {
+        label: "Transform origin",
+        children: <Origin />,
+        id: "Transform origin",
+      },
     ],
     initialTabId: "Rotate",
   });

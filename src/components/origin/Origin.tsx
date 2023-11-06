@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import { InputFrame } from "@/components/inputFrame/InputFrame";
 import { Heading } from "../heading/Heading";
 import DescriptionBlock from "../descriptionBlock/DescriptionBlock";
+import CastomOriginPath from "./castomOriginPath/CastomOriginPath";
 
 export default function Origin() {
   const [rotate, setRotate] = useState(0);
@@ -66,6 +67,7 @@ export default function Origin() {
           </fieldset>
         </form>
       </div>
+      <CastomOriginPath />
     </div>
   );
 }

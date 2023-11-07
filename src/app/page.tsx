@@ -11,6 +11,7 @@ import Origin from "@/components/origin/Origin";
 import { useTabs } from "@/components/hooks/useTabs";
 import { Framer } from "@/components/framer/Framer";
 import Hero from "@/components/hero/Hero";
+import Perspective from "@/components/perspective/Perspective";
 
 export default function Home() {
   const [hookProps] = useState({
@@ -49,6 +50,11 @@ export default function Home() {
         label: "Transform origin",
         children: <Origin />,
         id: "Transform origin",
+      },
+      {
+        label: "Perspective",
+        children: <Perspective />,
+        id: "Perspective",
       },
     ],
     initialTabId: "Hero",

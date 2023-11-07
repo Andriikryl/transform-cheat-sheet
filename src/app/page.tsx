@@ -12,6 +12,7 @@ import { useTabs } from "@/components/hooks/useTabs";
 import { Framer } from "@/components/framer/Framer";
 import Hero from "@/components/hero/Hero";
 import Perspective from "@/components/perspective/Perspective";
+import Backface from "@/components/backface/Backface";
 
 export default function Home() {
   const [hookProps] = useState({
@@ -55,6 +56,11 @@ export default function Home() {
         label: "Perspective",
         children: <Perspective />,
         id: "Perspective",
+      },
+      {
+        label: "Backface",
+        children: <Backface />,
+        id: "Backface",
       },
     ],
     initialTabId: "Hero",

@@ -58,6 +58,8 @@ export default function Hero() {
         <h1 className={styles.about__title}>Info</h1>
         <p className={styles.about__description}>
           Hi everyone! My name is Andrii and this is my little guide / progect
+          about how <span className={styles.transform}>CSS Transforms</span>{" "}
+          works
         </p>
         <div className={styles.stack__box}>
           <h2 className={styles.stack__title}>Technologies stack:</h2>
